@@ -1,0 +1,19 @@
+<div class="content-block-title"> Pratos Quentes </div>
+<div class="list-block media-list">
+  <ul>
+    <li ng-repeat="dish in dishes">
+      <label class="label-radio item-content">
+        <input type="radio" name="my-radio" checked>
+        <div class="item-media"><img ng-src="{{dish.photo}}" alt="{{dish.title}}" width="80"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">{{dish.title}}</div>
+            <div class="item-after">{{dish.price}}</div>
+          </div>
+          <!-- <div class="item-subtitle">Beatles</div> -->
+          <div class="item-text">{{dish.description}}</div>
+        </div>
+      </label>
+    </li>
+  </ul>
+</div>          

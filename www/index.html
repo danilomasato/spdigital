@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <title> SP Digital </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="favicon.ico" rel="shortcut icon" />
+
+    <link rel="stylesheet" href="assets/css/libs/framework7.ios.min.css">
+    <link rel="stylesheet" href="assets/css/libs/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="assets/css/libs/my-app.css">
+</head>
+<body data-ng-app="app">
+    
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div data-ng-view=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Your main view, should have "view-main" class -->
+    </div>
+    <!-- Views -->
+    
+    <script src="assets/js/libs/angular.min.js"></script>
+    <script src="assets/js/libs/angular-route.min.js"></script>
+    <script src="assets/js/libs/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="assets/js/libs/panels.js"></script>
+    <script src="services/services.js"></script>
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="assets/js/libs/framework7.js"></script>
+    
+
+    <script>
+       /*======================================================
+        ************   App Init   ************
+        ======================================================*/
+        var myApp = new Framework7({
+            swipePanel: 'left'
+        });
+     
+        var $$ = Dom7;
+     
+        $$('.open-panel').on('click', function (e) {
+            // 'left' position to open Left panel
+            myApp.openPanel('left');
+
+            e.preventDefault();
+        });
+
+        $$('.panel-close').on('click', function (e) {
+            myApp.closePanel();
+
+            e.preventDefault();
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+<div>
+    <div>
+        <input type="text" data-ng-model="exploreNearby" />
+    </div>
+    <div>
+        <!-- <h5>Places found Near by ({{exploreNearby}})</h5> -->
+        <li ng-repeat="combo in fotos">
+        	<h3>{{combo.titulo}}</h3>
+        	<img ng-src="{{combo.foto}}" alt="{{combo.titulo}}">
+        	<a href="{{combo.url}}">{{combo.url}}</a>
+        </li>
+    </div>
+</div>

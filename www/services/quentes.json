@@ -1,0 +1,28 @@
+[{
+	"quentes": [{
+		"title": "Korokke",
+		"description": "purê de batata e vegetais cremosos com recheio de frutos do mar.",
+		"photo" : "assets/img/korokke.jpg"
+	}, {
+		"title": "Kushiage",
+		"description": "Carnes fritas em espeto.",
+		"photo" : "assets/img/kushiage.jpg"
+	}, {
+		"title": "Tempura",
+		"description": "vegetais em pedaços, frutos do mar e carnes fritas.",
+		"photo" : "assets/img/tempura.jpg"
+	}, {
+		"title": "Tonkatsu",
+		"description": "Costela de porco frita.",
+		"photo" : "assets/img/tonkatsu.jpg"
+	}, {
+		"title": "Donburi",
+		"description": "taça de arroz cozido com coberturas temperadas.",
+		"photo" : "assets/img/donburi.jpg"
+	}, {
+		"title": "Gyoza",
+		"description": "bolinhos com recheio de carne de porco.",
+		"photo" : "assets/img/gyoza.jpg"
+	}]
+
+}]
